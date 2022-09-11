@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <link rel="shortcut icon" href="assets/img/icon.ico" alt="Icon-Aplus-Dessert">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="index" type="html" href="index.html">
+</head>
+
+<body class="bg">
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#completedH2">Selesai Di Baca</a></li>
+                <li><a href="#uncompletedH2">Belum Di Baca</a></li>
+                <li><a href="#content">Input Buku</a></li>
+            </ul>
+        </nav>
+        <div class="header-wrap">
+            <h1><img class="book-icon" src="assets/img/open-book.png" alt="book-icon">&nbsp;&nbsp;<span>Sebuah Aplikasi</span></h1>
+            <p>Buku adalah jendela dunia di mana kita bisa melihat isi dunia tanpa melakukan perjalanan,</p>
+            <p> hanya cukup membaca sebuah halaman</p>
+        </div>
+
+    </header>
+
+    <!-- BODY -->
+    <main>
+        <div id="content">
+            <article class="content-w1">
+                <section class="input_section" id="inputSection">
+                    <h2 id="h2InputSection">Masukkan Buku Baru
+
+                    </h2>
+                    <form id="inputBook">
+                        <div class="input" id="sectionTitle">
+                            <label for="inputBookTitle">Judul</label>
+                            <input id="inputBookTitle" type="text" placeholder="Masukkan judul buku" />
+                            <small class="error-display" id="errorTitle">Wajib Diisi</small>
+                        </div>
+                        <div class="input" id="sectionAuthor">
+                            <label for="inputBookAuthor">Penulis</label>
+                            <input id="inputBookAuthor" type="text" placeholder="Masukkan nama penulis buku" />
+                            <small class="error-display" id="errorAuthor">Wajib Diisi</small>
+                        </div>
+                        <div class="input" id="sectionYear">
+                            <label for="inputBookYear">Tahun</label>
+                            <input id="inputBookYear" type="number" placeholder="Masukkan tahun terbit buku" />
+                            <small class="error-display" id="errorYear">Wajib Diisi</small>
+                        </div>
+                        <div class="input_inline">
+                            <input id="inputBookIsComplete" type="checkbox" />
+                            <label for="inputBookIsComplete">Selesai dibaca</label>
+                        </div>
+                        <button id="bookSubmit" type="button"><img class="add-icon"  src="assets/img/log-in.png" alt="add-icon">
+                            <span>Masukkan Buku</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+
+        <aside>
+            <article class="content-aw1">
+                <section class="search_section book_shelf" id="searchSection">
+                    <h2 id="searchSectionH2">Cari Buku</h2>
+                    <span class="total_buku">Total Buku :
+                        <span id="totalBuku"></span>
+                    </span>
+                    <form id="searchBook">
+                        <input id="searchBookTitle" type="text" placeholder="Nama Buku / Tahun / Penulis" />
+                        <button id="searchSubmit" type="submit"><img class="search-icon" src="assets/img/search.png" alt="search-icon">
+                        <span>Cari</span></button>
+                    </form>
+
+                    <div id="searchResult" class="book_list"></div>
+                </section>
+            </article>
+
+            <article class="content-w2">
+                <section class="book_shelf" id="bookShelfUncompleted">
+                    <h2 id="uncompletedH2">Belum selesai dibaca</h2>
+
+                    <div id="incompleteBookshelfList" class="book_list"></div>
+                </section>
+            </article>
+
+            <article class="content-aw2">
+                <section class="book_shelf" id="bookShelfCompleted">
+                    <h2 id="completedH2">Selesai dibaca</h2>
+
+                    <div id="completeBookshelfList" class="book_list"></div>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <article class="container-footer">
+
+            Copyright © 2022 | All rights Reserved Bookshelf Apps
+        </article>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/crd.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/swap.js"></script>
+</body>
+
+</html>
